@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "stoneseller",
+  "version": "${version}",
+  "name": "Stone Seller Bot",
+  "description": "Автоматически собирает камень из сундука и продаёт на аукционе /ah sell",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.stoneseller.StoneSeller"
+    ]
+  },
+  "mixins": [
+    "stoneseller.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "fabric-api": "*",
+    "minecraft": "~1.21.4",
+    "java": ">=21"
+  }
+}
